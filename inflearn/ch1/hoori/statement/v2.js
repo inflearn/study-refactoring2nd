@@ -7,7 +7,7 @@
  *
  * 이유: 이것도 일종의 하드코딩이 아닐런지.. 수정이 필요한 경우 분산된 수정 지점을 하나로 모아주어 버그 발생율을 줄일 수 있다.
  * */
-import { PLAY_TYPE } from '../data.js';
+import { PLAY_TYPE } from '../config.js';
 const /**1**/{ TRAGEDY, COMEDY } = PLAY_TYPE;
 export const statement_v2 = ({ customer, performances }, plays) => {
   let totalAmount = 0;

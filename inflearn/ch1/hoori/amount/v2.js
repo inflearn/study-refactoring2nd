@@ -4,7 +4,7 @@
  * 장르별 금액은 기본금액 + 추가금액 으로 결정되는데,
  * 기본금액 및 추가금액 부분을 따로 뗴어냄으로써 기본금액 정책과 추가금액 정책을 따로 관리할 수 있다.
  */
-import { PLAY_TYPE } from '../data.js';
+import { PLAY_TYPE } from '../config.js';
 
 const { TRAGEDY, COMEDY } = PLAY_TYPE;
 

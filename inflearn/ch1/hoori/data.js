@@ -1,12 +1,6 @@
-/** play.type 변수화 */
-const TRAGEDY = 'tragedy', COMEDY = 'comedy';
-export const PLAY_TYPE = { TRAGEDY, COMEDY };
-
-/** playID 변수화 */
-export const
-  HAMLET = 'hamlet',
-  AS_LIKE = 'as-like',
-  OTHELLO = 'othello';
+import { PLAY_ID, PLAY_TYPE } from './config';
+const { TRAGEDY, COMEDY } = PLAY_TYPE;
+const { HAMLET, AS_LIKE, OTHELLO } = PLAY_ID;
 
 /**
  * 기존에 정의 된 데이터 plays 및 invoices 에도 다음과 같이 상수를 변수로 사용하는 것이 좋다.

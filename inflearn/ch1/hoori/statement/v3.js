@@ -11,7 +11,7 @@
  *           결제 수단에 따라 금액이 달라지는 경우. 등..
  * 이유2: 부분적인 로직을 따로 떼어냄으로써 해당 로직만 별도로 테스트하여 검증할 수 있다.
  * */
-import { PLAY_TYPE } from '../data.js';
+import { PLAY_TYPE } from '../config.js';
 import { AmountByType } from '../amount.js';
 const { COMEDY } = PLAY_TYPE;
 export const statement_v3 = ({ customer, performances }, plays) => {

@@ -16,7 +16,7 @@
  * 해당 로직을 분리하여 관리하기 위함.
  * */
 import { formatUSD } from '../formatUSD.js';
-import { PLAY_TYPE } from '../data.js';
+import { PLAY_TYPE } from '../config.js';
 import { AmountByType } from '../amount.js';
 const { COMEDY } = PLAY_TYPE;
 

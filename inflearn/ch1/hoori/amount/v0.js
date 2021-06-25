@@ -1,5 +1,5 @@
 /** statement 함수의 switch 문을 그대로 옮긴 오리지널 버전 */
-import { PLAY_TYPE } from '../data.js';
+import { PLAY_TYPE } from '../config.js';
 
 const { TRAGEDY, COMEDY } = PLAY_TYPE;
 

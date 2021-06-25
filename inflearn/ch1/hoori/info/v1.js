@@ -1,5 +1,5 @@
 import { AmountByType } from '../amount.js';
-import { PLAY_TYPE } from '../data.js';
+import { PLAY_TYPE } from '../config.js';
 import { formatUSD } from '../formatUSD.js';
 
 const { COMEDY } = PLAY_TYPE;

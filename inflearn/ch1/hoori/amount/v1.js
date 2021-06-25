@@ -9,7 +9,7 @@
  * 인원수(audience)와 기준인원수(baseAudience)에 따라 계산된 추가금액(extraAmount)을 더한 값이 최종 금액에 해당하는데,
  * 이렇게 분리하면 장르별 기본금액 및 추가금액 계산 로직을 따로 관리할 수 있다. (v2 참조)
  */
-import { PLAY_TYPE } from '../data.js';
+import { PLAY_TYPE } from '../config.js';
 
 const { TRAGEDY, COMEDY } = PLAY_TYPE;
 
