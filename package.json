@@ -12,5 +12,9 @@
     "js-money": "^0.6.3",
     "mocha": "^5.2.0",
     "sinon": "^7.3.2"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/inflearn/study-refactoring2nd.git",
+  "author": "hoori <freedom09@inflearn.com>",
+  "license": "MIT"
 }
