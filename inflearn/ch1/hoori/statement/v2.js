@@ -9,7 +9,7 @@
  * */
 import { PLAY_TYPE } from '../config.js';
 const /**1**/{ TRAGEDY, COMEDY } = PLAY_TYPE;
-export const statement_v2 = ({ customer, performances }, plays) => {
+export const statementV2 = ({ customer, performances }, plays) => {
   let totalAmount = 0;
   let volumeCredits = 0;
   let result = `청구내역 (고객명: ${customer})\n`;

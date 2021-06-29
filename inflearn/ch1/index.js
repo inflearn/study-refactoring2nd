@@ -1,20 +1,20 @@
-import { invoices, plays } from './0rigin/data';
-import { statementOrigin } from './0rigin/statement';
-import { statementHoori } from './hoori/statement.js';
+import { invoices, plays } from './origin/data';
+import { statementOrigin } from './origin/statement';
+import { statementHoori } from './hoori/statement';
 
-const ch_i = 1;
-let i = 1;
-const ch1Log = (...as) => {
-  log('# # #', ch_i, `-`, i++);
-  log(...as);
+const CHAPTER_1_INDEX = 1;
+const subChapterIndex = 1;
+const chapterLog = (...info) => {
+  console.log(`# # # ${CHAPTER_1_INDEX}-${subChapterIndex}`);
+  console.log(...info);
 };
 
-
-for (let invoice of invoices) {
-  ch1Log(
-    check(
+for (const invoice of invoices) {
+  chapterLog(
+    checkDiffrence(
       statementOrigin(invoice, plays),
       statementHoori(invoice, plays),
     ),
-    new Date);
+    new Date(),
+  );
 }

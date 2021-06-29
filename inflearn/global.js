@@ -1,14 +1,17 @@
 global.log = console.log;
 
-global.check = (...as) => {
-  // log(as.length);
-  const [a, ..._as] = as;
-  for (let _a of _as) {
-    if (_a !== a && JSON.stringify(_a) !== JSON.stringify(a)) {
-      log(a);
-      log(_a);
-      throw new Error('not equal');
-    }
+function equals(origin, ...targets) {
+  return targets.every(
+    (target) => target === origin || JSON.stringify(target) === JSON.stringify(origin),
+  );
+}
+
+global.checkDiffrence = (data) => {
+  if (equals(data)) {
+    return;
   }
-  return a;
+  const [origin, targets] = data;
+  const diffrentTaraget = targets.find((target) => origin !== target);
+  console.log(`origin: ${origin}, diffrent: ${diffrentTaraget}}`);
+  throw new Error('not equal');
 };

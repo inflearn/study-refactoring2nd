@@ -1,5 +1,5 @@
 /** 오리지널 statement 함수 */
-export const statement_v0 = (invoice, plays) => {
+export const statementV0 = (invoice, plays) => {
   let totalAmount = 0;
   let volumeCredits = 0;
   let result = `청구내역 (고객명: ${invoice.customer})\n`;

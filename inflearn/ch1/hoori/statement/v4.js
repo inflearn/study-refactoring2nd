@@ -20,7 +20,7 @@ import { PLAY_TYPE } from '../config.js';
 import { AmountByType } from '../amount.js';
 const { COMEDY } = PLAY_TYPE;
 
-export const statement_v4 = ({ customer, performances }, plays) => {
+export const statementV4 = ({ customer, performances }, plays) => {
   let totalAmount = 0;
   let volumeCredits = 0;
   let result = `청구내역 (고객명: ${customer})\n`;

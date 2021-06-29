@@ -8,7 +8,7 @@
 import { formatUSD } from '../formatUSD.js';
 import { sumInfo } from '../sumInfo.js';
 
-export const statement_v6 = ({ customer, performances }, plays) => {
+export const statementV6 = ({ customer, performances }, plays) => {
   let totalAmount = 0;
   let volumeCredits = 0;
   let result = `청구내역 (고객명: ${customer})\n`;
