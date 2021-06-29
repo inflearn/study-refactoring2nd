@@ -13,10 +13,10 @@ export const statementV6 = ({ customer, performances }, plays) => {
   let volumeCredits = 0;
   let result = `청구내역 (고객명: ${customer})\n`;
 
-  const { sumAmount, sumPoint, sumDescription } = sumInfo(performances, plays);
-  totalAmount += sumAmount;
-  volumeCredits += sumPoint;
-  result += sumDescription;
+  const { totalAmount, totalPoint, totalDescription } = sumInfo(performances, plays);
+  totalAmount += totalAmount;
+  volumeCredits += totalPoint;
+  result += totalDescription;
 
   result += `총액: ${formatUSD(totalAmount)}\n`;
   result += `적립 포인트: ${volumeCredits}점\n`;

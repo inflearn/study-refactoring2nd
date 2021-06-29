@@ -13,7 +13,7 @@ const ExtraPoint = (type, audience) => {
   return 0;
 };
 
-export const Info_v1 = (type, audience, name) => {
+export const infoV1 = (type, audience, name) => {
   const amount = AmountByType(type, audience);
   return {
     amount,

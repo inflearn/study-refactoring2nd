@@ -1,7 +1,7 @@
-import { Info_v0 } from './info/v0.js';
-import { Info_v1 } from './info/v1.js';
+import { infoV0 } from './info/v0';
+import { infoV1 } from './info/v1';
 
-export const Info = (type, audience, name) => checkDiffrence(
-  Info_v0(type, audience, name),
-  Info_v1(type, audience, name),
+export default info = (type, audience, name) => checkDiffrence(
+  infoV0(type, audience, name),
+  infoV1(type, audience, name),
 );

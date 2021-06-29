@@ -8,7 +8,7 @@ function equals(origin, ...targets) {
 
 global.checkDiffrence = (data) => {
   if (equals(data)) {
-    return;
+    return data[0];
   }
   const [origin, targets] = data;
   const diffrentTaraget = targets.find((target) => origin !== target);

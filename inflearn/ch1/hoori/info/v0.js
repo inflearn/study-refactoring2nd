@@ -4,7 +4,7 @@ import { formatUSD } from '../formatUSD.js';
 
 const { COMEDY } = PLAY_TYPE;
 
-export const Info_v0 = (type, audience, name) => {
+export const infoV0 = (type, audience, name) => {
   const amount = AmountByType(type, audience);
   const pointByAudience = Math.max(audience - 30, 0);
   const pointByType = COMEDY === type ? Math.floor(audience / 5) : 0;

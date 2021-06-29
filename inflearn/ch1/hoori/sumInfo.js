@@ -1,17 +1,17 @@
-import { Info } from './info.js';
+import info from './info.js';
 
 export const sumInfo = (performances, plays) => {
-  let sumAmount = 0;
-  let sumPoint = 0;
-  let sumDescription = '';
+  let totalAmount = 0;
+  let totalPoint = 0;
+  let totalDescription = '';
 
   for (let { playID, audience } of performances) {
     const { type, name } = plays[playID];
-    const { amount, point, description } = Info(type, audience, name);
-    sumAmount += amount;
-    sumPoint += point;
-    sumDescription += description;
+    const { amount, point, description } = info(type, audience, name);
+    totalAmount += amount;
+    totalPoint += point;
+    totalDescription += description;
   }
 
-  return { sumAmount, sumPoint, sumDescription };
+  return { totalAmount, totalPoint, totalDescription };
 };
