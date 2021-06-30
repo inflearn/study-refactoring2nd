@@ -18,5 +18,8 @@
   "main": "index.js",
   "repository": "https://github.com/inflearn/study-refactoring2nd.git",
   "author": "hoori <freedom09@inflearn.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  }
 }
