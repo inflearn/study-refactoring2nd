@@ -9,14 +9,14 @@ import { PLAY_TYPE } from '../config.js';
 const { TRAGEDY, COMEDY } = PLAY_TYPE;
 
 /** 장르(type)별 기본금액 (인원수와 관계없이 장르에 따른 기본요금) */
-const BaseAmount = type => {
+const getBaseAmount = type => {
   if (type === TRAGEDY) return 40000;
   if (type === COMEDY) return 30000;
   throw new Error(`알 수 없는 장르: ${type}`);
 };
 
 /** 장르(type) 및 인원수(audience)에 따라 결정되는 추가요금 */
-const ExtraAmount = (type, audience) => {
+const getExtraAmount = (type, audience) => {
   /** 비극은 30명 초과분에 대하여 초과인원당 1000원씩 */
   if (type === TRAGEDY) {
     const baseAudience = 30;
@@ -36,6 +36,6 @@ const ExtraAmount = (type, audience) => {
   throw new Error(`알 수 없는 장르: ${type}`);
 };
 
-export const AmountByType_v2 = (type, audience) => {
-  return BaseAmount(type) + ExtraAmount(type, audience);
+export const getAmountByTypeV2 = (type, audience) => {
+  return getBaseAmount(type) + getExtraAmount(type, audience);
 };

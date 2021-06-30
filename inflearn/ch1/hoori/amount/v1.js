@@ -13,7 +13,7 @@ import { PLAY_TYPE } from '../config.js';
 
 const { TRAGEDY, COMEDY } = PLAY_TYPE;
 
-export const AmountByType_v1 = (type, audience) => {
+export const getAmountByTypeV1 = (type, audience) => {
   if (type === TRAGEDY) {
     const baseAmount = 40000;
     const baseAudience = 30;
